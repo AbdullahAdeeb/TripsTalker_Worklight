@@ -1,0 +1,125 @@
+<!DOCTYPE HTML><html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>TripsTalker</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+<!--
+    			<link rel="shortcut icon" href="images/favicon.png">
+    			<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+    		-->
+        <link href="worklight/worklight.css" rel="stylesheet">
+        <link href="jqueryMobile/jquery.mobile-1.4.3.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/themes/myTrialTheme.css" rel="stylesheet">
+        <link href="css/themes/jquery.mobile.icons.min.css" rel="stylesheet">
+        <script>
+		// Define WL namespace.
+		var WL = WL ? WL : {};
+		/**
+		 * WLClient configuration variables.
+		 * Values are injected by the deployer that packs the gadget.
+		 */
+		WL.StaticAppProps = {
+   "APP_DISPLAY_NAME": "TripsTalker",
+   "APP_ID": "TripsTalker",
+   "APP_SERVICES_URL": "\/apps\/services\/",
+   "APP_VERSION": "1.0",
+   "ENVIRONMENT": "android",
+   "LOGIN_DISPLAY_TYPE": "embedded",
+   "WORKLIGHT_NATIVE_VERSION": "1356647314",
+   "WORKLIGHT_PLATFORM_VERSION": "6.2.0.00.20140825-1637",
+   "WORKLIGHT_ROOT_URL": "\/apps\/services\/api\/TripsTalker\/android\/"
+};</script>
+		<script src="worklight/cordova.js"></script>
+		<script src="worklight/wljq.js"></script>
+		<script src="worklight/worklight.js"></script>
+		<script src="worklight/checksum.js"></script>
+		<script>
+	window.$ = window.jQuery = WLJQ;
+</script>
+<script src="jqueryMobile/jquery.mobile-1.4.3.js"></script>
+    </head>
+    <body style="display: none;">
+        <div data-role="page" id="login">
+            <div data-role="content" style="padding: 15px">
+                <form id="login0" onSubmit="javascript:loginClick(this.login_email0.value,this.login_password.value);">
+                    <label for="login_email0">e-mail address: </label> <input id="login_email0" name="login_email0" type="text"> <label for="login_password">Password</label> <input id="login_password" name="login_password" type="password">
+				<button data-role="button" data-theme="b" type="submit">Login</button>
+                </form>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a data-mini="true" data-role="button" href="#reset_password">Forgot
+						password</a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a data-mini="true" data-role="button" href="#register">Create
+						account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="reset_password">
+            <div data-role="content" style="padding: 15px">
+                <form action="" id="login0">
+                    <label for="login_email">e-mail address: </label> <input id="login_email0" name="login_email" type="text">
+				<button data-role="button" data-theme="b" type="submit">Reset
+					Password</button>
+                </form>
+            </div>
+        </div>
+        <div data-role="page" id="register">
+            <div data-role="content">
+                <form action="" id="form">
+                    <label for="register_email">e-mail address: </label> <input id="register_email" name="register_email" type="text"> <label for="register_first_name">First name: </label> <input id="register_first_name" name="register_first_name" type="text"> <label for="register_last_name">Last name: </label> <input id="register_last_name" name="register_last_name" type="text"> <label for="register_password">Password:</label> <input id="register_password" name="register_password" type="password"> <label for="register_repeat_password">Repeat password:</label> <input id="register_repeat_password" name="register_repeat_password" type="password">
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <button data-role="button" data-theme="b" type="submit">Register</button>
+                        </div>
+                        <div class="ui-block-b">
+                            <button data-role="button" type="reset">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div data-role="page" id="main">
+            <div data-role="content" style="padding: 15px">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a href="#page1">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#page2">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#page3">Page 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-add-back-btn="true" data-role="page" id="page1">
+            <div data-position="fixed" data-role="header">
+                <h3>Page 1</h3>
+            </div>
+            <div data-role="content" style="padding: 15px"></div>
+        </div>
+        <div data-add-back-btn="true" data-role="page" id="page2">
+            <div data-position="fixed" data-role="header">
+                <h3>Page 2</h3>
+            </div>
+            <div data-role="content" style="padding: 15px"></div>
+        </div>
+        <div data-add-back-btn="true" data-role="page" id="page3">
+            <div data-position="fixed" data-role="header">
+                <h3>Page 3</h3>
+            </div>
+            <div data-role="content" style="padding: 15px"></div>
+        </div>
+        <script src="js/initOptions.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/messages.js"></script>
+    </body>
+</html>

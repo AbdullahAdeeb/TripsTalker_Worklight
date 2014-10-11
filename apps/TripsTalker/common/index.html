@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TripsTalker</title>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+<!--
+    			<link rel="shortcut icon" href="images/favicon.png">
+    			<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+    		-->
+<link href="jqueryMobile/jquery.mobile-1.4.3.css" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/themes/myTrialTheme.css" />
+<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+<script>
+	window.$ = window.jQuery = WLJQ;
+</script>
+
+<script src="jqueryMobile/jquery.mobile-1.4.3.js"></script>
+</head>
+<body style="display: none;">
+	<div data-role="page" id="login">
+		<div data-role="header" id="header" data-position="fixed">
+			<h3>Trips Talker</h3>
+		</div>
+		<div data-role="content" style="padding: 15px">
+			<form id="login0" onSubmit="javascript:loginClick(this.username.value,this.login_password.value);">
+				<label for="username">Username: </label> <input type="text"
+					name="username" id="username"> <label
+					for="login_password">Password</label> <input type="password"
+					name="login_password" id="login_password">
+
+				<button type="submit" data-role="button" data-theme="b">Login</button>
+			</form>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<a href="#reset_password" data-role="button" data-mini="true">Forgot
+						password</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#register" data-role="button" data-mini="true">Create
+						account</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="reset_password">
+		<div data-role="content" style="padding: 15px">
+			<form id="login0" action="">
+				<label for="login_email">e-mail address: </label> <input type="text"
+					name="login_email" id="login_email0">
+				<button type="submit" data-role="button" data-theme="b">Reset
+					Password</button>
+			</form>
+		</div>
+	</div>
+	<div data-role="page" id="register">
+		<div data-role="content">
+			<form id="form" action="">
+				<label for="register_email">e-mail address: </label> <input
+					type="text" name="register_email" id="register_email"> <label
+					for="register_first_name">First name: </label> <input type="text"
+					name="register_first_name" id="register_first_name"> <label
+					for="register_last_name">Last name: </label> <input type="text"
+					name="register_last_name" id="register_last_name"> <label
+					for="register_password">Password:</label> <input type="password"
+					name="register_password" id="register_password"> <label
+					for="register_repeat_password">Repeat password:</label> <input
+					type="password" name="register_repeat_password"
+					id="register_repeat_password">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<button type="submit" data-role="button" data-theme="b">Register</button>
+					</div>
+					<div class="ui-block-b">
+						<button type="reset" data-role="button">Cancel</button>
+					</div>
+				</div>
+			</form>
+
+		</div>
+	</div>
+	<div data-role="page" id="main">
+		<div data-role="content" style="padding: 15px">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page1">Page 1</a></li>
+					<li><a href="#page2">Page 2</a></li>
+					<li><a href="#page3">Page 3</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="page1" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h3>Page 1</h3>
+		</div>
+		<div data-role="content" style="padding: 15px"></div>
+	</div>
+	<div data-role="page" id="page2" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h3>Page 2</h3>
+		</div>
+		<div data-role="content" style="padding: 15px"></div>
+	</div>
+	<div data-role="page" id="page3" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h3>Page 3</h3>
+		</div>
+		<div data-role="content" style="padding: 15px"></div>
+	</div>
+
+
+
+
+
+	<script src="js/initOptions.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/messages.js"></script>
+</body>
+</html>
